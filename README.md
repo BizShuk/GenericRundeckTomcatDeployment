@@ -3,8 +3,15 @@ A generic tomcat application deployment on Rundeck.
 
 [Sample project](jobs.xml)
 
-### import
-change basic configuration and use rd tool to import
+- [How to import](#how-to-import)
+- [How to config for customized env](#how-to-config-for-customized-env)
+- [BackUp](#backup)
+    - [rd access and debug configuration](#rd-access-and-debug-configuration)
+    - [troubleshooting](#troubleshooting)
+
+### How to import
+change basic configuration and use rd tool to import.
+`rd jobs load -f /XmlFilePath -p <ProjectName>`
 
 ### How to config for customized env
 1. Duplicat server job and config with customized server ip addreass and path
