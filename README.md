@@ -1,6 +1,7 @@
 # GenericRundeckTomcatDeployment
 A generic tomcat application deployment on Rundeck.
 
+[Sample project](jobs.xml)
 
 ### import
 change basic configuration and use rd tool to import
@@ -9,15 +10,11 @@ change basic configuration and use rd tool to import
 1. Duplicat server job and config with customized server ip addreass and path
 2. Duplicate application job with application name, version, and package, and config server job reference to customized server job
 
-
-
-
 ### BackUp
 - [rd](https://rundeck.github.io/rundeck-cli/) tool, backup tool created by rundeck
 - job xml backup cmd: `rd jobs list -f /StoredPath -p <ProjectName>` 
 
 ##### rd access and debug configuration
-
     # Server URL
     export RD_URL=${RD_URL:-http://server:4440}/api/<version>, 4440 for http, 4443 for https.
 
