@@ -15,6 +15,9 @@ change basic configuration and use rd tool to import
 - job xml backup cmd: `rd jobs list -f /StoredPath -p <ProjectName>` 
 
 ##### rd access and debug configuration
+Configuration below can be configured in `~/.rd/rd.conf` (export RD_CONF=[Conf path], but unknown format.
+
+
     # Server URL
     export RD_URL=${RD_URL:-http://server:4440}/api/<version>, 4440 for http, 4443 for https.
 
