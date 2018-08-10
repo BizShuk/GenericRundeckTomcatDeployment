@@ -37,7 +37,11 @@ change basic configuration and use rd tool to import
     export RD_INSECURE_SSL_HOSTNAME=true
 
 ##### troubleshooting
-1. PKIX path building failed. unable to find valid certification path to requested target. Resolved by `export RD_INSECURE_SSL=true`
-2. api version is not supported. (server:20 rd:21). Resolved by turning on debug more and skipping security check.
+
+1. IOException: unexpected end of stream on okhttp3.Address@89fa6f1. Resolved by using right linux user `rundeck`
+
+2. PKIX path building failed. unable to find valid certification path to requested target. Resolved by `export RD_INSECURE_SSL=true`
+
+3. api version is not supported. (server:20 rd:21). Resolved by turning on debug more and skipping security check.
 
 
